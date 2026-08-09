@@ -20,6 +20,10 @@ window.CATEGORIES = [
     "blurb": "What households pay, and who is cost burdened."
   },
   {
+    "name": "Filtering and Moving Chains",
+    "blurb": "What happens to the homes people leave behind when new housing opens."
+  },
+  {
     "name": "Segregation and Neighborhood Inequality",
     "blurb": "How housing policy sorts people across places and hardens disadvantage."
   },

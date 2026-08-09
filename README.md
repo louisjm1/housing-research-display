@@ -1,9 +1,16 @@
 # Housing Research
 
 A small website that lists housing policy research in a searchable table, like a
-spreadsheet you can filter. Each row holds the title, the authors, the month it
-was published, up to three grouping categories, the most important point of the
-paper in the paper's own words, and a link to the research.
+spreadsheet you can filter.
+
+It has two tabs. **Research** holds papers, articles, videos, and data tools,
+with the title, the authors, the month it was published, up to three grouping
+categories, the most important point in the source's own words, and a link.
+**Court Cases** holds important decisions, with the case name, the year, the
+forum, the major finding quoted from the court, and a link.
+
+The search box, the filter buttons, the sorting, and the spreadsheet download
+all work on whichever tab you are looking at.
 
 ## What is in here
 
@@ -12,7 +19,8 @@ paper in the paper's own words, and a link to the research.
 | `index.html` | The page itself. Open it and the table appears. |
 | `assets/style.css` | How the page looks. |
 | `assets/app.js` | The searching, filtering, sorting, and download button. |
-| `data/papers.js` | **The library.** One entry per paper. This is the only file that changes as papers get added. |
+| `data/papers.js` | **The research library.** One entry per source. |
+| `data/cases.js` | **The court cases.** One entry per case. |
 | `data/categories.js` | The approved list of grouping categories. |
 | `check.py` | The safety check. It confirms every entry is complete and every quoted finding is word for word what the paper says. |
 
@@ -54,6 +62,42 @@ written into `data/papers.js` that looks like this:
 }
 ```
 
+Not everything has an abstract. A magazine piece, a video, or a data tool stores
+`source_text` instead, holding the passage that was actually read at the link,
+and `key_point_source` says what that passage was. The quotation gets measured
+against whichever of the two is there.
+
+For anything under copyright that is not a scholarly abstract, the quotation
+stays short. A newspaper or magazine entry quotes one line, with the link doing
+the rest of the work.
+
+## Adding a court case
+
+Entries in `data/cases.js` look like this:
+
+```
+{
+  "id": "case-name-year",
+  "name": "the case name as the court writes it",
+  "citation": "272 U.S. 365 (1926)",
+  "year": 1926,
+  "decided": "1926-11-22",
+  "forum": "U.S. Supreme Court",
+  "finding": "the major finding, quoted from the court",
+  "finding_source": "Opinion of the Court",
+  "source_text": "the passage that was read at the link",
+  "keywords": ["words people search for that the court never used"],
+  "url": "a page explaining the case",
+  "url_label": "Wikipedia",
+  "opinion_url": "the opinion itself, if it is somewhere else"
+}
+```
+
+`keywords` never appear on the page. They exist because courts avoid the words
+people search for. Shelley v. Kraemer never says "covenant" and Nordlinger v.
+Hahn never says "Proposition 13", so those words live in `keywords` and the
+search finds the case anyway.
+
 `related` is optional and only the newer paper needs it. Write it once there,
 and the earlier paper picks up the other half of the sentence on its own. A
 paper that says it *follows* another shows "Follow-up to", and the earlier one
@@ -75,8 +119,10 @@ shows "Followed by". The three link types are `follows`, `responds`, and
    became available while the publication column shows the citation as printed.
 5. **A link between two papers has to point forward in time.** A follow-up
    cannot be older than the paper it follows.
+6. **A case year has to match the date it was decided**, and the quoted holding
+   has to be word for word in the passage stored from the source.
 
-The safety check enforces all five. Open Terminal, type `cd ` with a space,
+The safety check enforces all six. Open Terminal, type `cd ` with a space,
 drag this folder onto the Terminal window, press Return, and then run:
 
 ```bash

@@ -115,5 +115,160 @@ window.PAPERS = [
       { "id": "been-ellen-oregan-2019-supply-skepticism", "relation": "follows" }
     ],
     "added": "2026-08-08"
+  },
+  {
+    "id": "fang-kim-tyndall-2025-downmarket-impact-honolulu",
+    "title": "The Downmarket Impact of New Multifamily Housing: Evidence from a Honolulu Condo Tower",
+    "authors": ["Limin Fang", "Emi Kim", "Justin Tyndall"],
+    "affiliations": ["University of British Columbia", "Harvard University", "University of Hawaii at Manoa"],
+    "published": "2025-11",
+    "published_basis": "Posted to SSRN",
+    "venue": "Real Estate Economics (2026)",
+    "kind": "Peer reviewed article",
+    "access": "Free download",
+    "categories": [
+      "Filtering and Moving Chains",
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "The vacated homes were substantially cheaper than the new units and spanned diverse locations and housing types. Income-restricted units produced fewer secondary vacancies, but those vacancies were concentrated at lower price points. Our results show that new condominium construction eases supply constraints and expands affordability in a local housing market, and the contrast between market-rate and income-restricted units has important implications for inclusionary zoning policies.",
+    "key_point_source": "Abstract",
+    "abstract": "We test whether new condominium construction generates vacancies in a local housing market through induced moves. Using detailed address-history microdata, we track households who moved into a newly built 512-unit condominium tower in Honolulu, Hawai'i, which included both market-rate and income-restricted units. We identify prior addresses and follow vacancy chains across multiple rounds of moves. The vacated homes were substantially cheaper than the new units and spanned diverse locations and housing types. Income-restricted units produced fewer secondary vacancies, but those vacancies were concentrated at lower price points. Our results show that new condominium construction eases supply constraints and expands affordability in a local housing market, and the contrast between market-rate and income-restricted units has important implications for inclusionary zoning policies.",
+    "keywords": ["Housing Supply", "Urban Development", "Land-Use Regulation", "Filtering"],
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5780364",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "grabar-2026-high-end-construction-helps-everyone",
+    "title": "High-End Construction Really Does Help Everyone",
+    "authors": ["Henry Grabar"],
+    "affiliations": [],
+    "published": "2026-02",
+    "published_basis": "Publication date",
+    "venue": "The Atlantic, Ideas",
+    "kind": "Magazine article",
+    "access": "Subscription",
+    "categories": [
+      "Filtering and Moving Chains",
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "A new rung at the top of the housing ladder permits people lower down to climb up.",
+    "key_point_source": "Summary line",
+    "source_text": "High-End Construction Really Does Help Everyone. A new rung at the top of the housing ladder permits people lower down to climb up.",
+    "keywords": [],
+    "url": "https://www.theatlantic.com/ideas/2026/02/housing-crisis-rich-poor-building/686086/",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "pew-2026-moving-chains-of-affordability",
+    "title": "Building More Housing Creates “Moving Chains” of Affordability",
+    "authors": ["The Pew Charitable Trusts"],
+    "affiliations": [],
+    "published": "2026-05",
+    "published_basis": "Publication date",
+    "venue": "The Pew Charitable Trusts, Housing Policy",
+    "kind": "Video",
+    "access": "Free",
+    "categories": [
+      "Filtering and Moving Chains",
+      "Housing Supply and Production",
+      "Subsidized and Affordable Housing"
+    ],
+    "key_point": "Research conducted by Evan Mast, an assistant professor at the University of Notre Dame, shows that when a community builds new housing—including high-end apartments—it creates vacancies downstream, in lower- and middle-income neighborhoods, as people move to bigger or nicer (and often more expensive) homes. [...] By allowing more apartments to be built—even luxury apartments—D.C. created a moving chain that freed up at least five homes",
+    "key_point_source": "Video page",
+    "source_text": "Titi’s story illustrates the real-life consequences of the U.S. housing shortage—currently estimated at 4 million to 7 million homes—and how building more housing of any kind can help increase availability and improve affordability. How so? It’s called a moving chain. Research conducted by Evan Mast, an assistant professor at the University of Notre Dame, shows that when a community builds new housing—including high-end apartments—it creates vacancies downstream, in lower- and middle-income neighborhoods, as people move to bigger or nicer (and often more expensive) homes. Using this framework, The Pew Charitable Trusts found that Titi’s home in a dedicated low-income apartment building would not have been available if a luxury apartment building had not been built in downtown D.C. 10 years earlier. By allowing more apartments to be built—even luxury apartments—D.C. created a moving chain that freed up at least five homes—including Titi’s.",
+    "keywords": ["Economic mobility", "Housing", "Local policy"],
+    "url": "https://www.pew.org/en/research-and-analysis/video/2026/building-more-housing-creates-moving-chains-of-affordability",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "rollet-2025-zoning-dynamics-urban-redevelopment",
+    "title": "Zoning and the Dynamics of Urban Redevelopment",
+    "also_titled": "Can We Rebuild a City? The Dynamics of Urban Redevelopment",
+    "authors": ["Vincent Rollet"],
+    "affiliations": ["Massachusetts Institute of Technology"],
+    "published": "2025-04",
+    "published_basis": "Posted to SSRN",
+    "venue": "Working paper, Massachusetts Institute of Technology",
+    "kind": "Working paper",
+    "access": "Free download",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings and generate considerable persistence in city structure. Furthermore, due to migration spillovers, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
+    "key_point_source": "Abstract",
+    "abstract": "Cities increasingly grow through redevelopment—demolishing old buildings to make way for new ones. This paper studies this process and how it is influenced by zoning, which regulates the size and use of new buildings. I build a dynamic general equilibrium model of floorspace supply and demand, which I estimate using a newly constructed parcel-level panel of buildings and zoning in New York City. I validate the model using quasi-experimental variation from recent zoning reforms and apply it to evaluate the effect of relaxing regulation on construction and affordability. While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings and generate considerable persistence in city structure. Furthermore, due to migration spillovers, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
+    "keywords": ["zoning", "redevelopment", "historical persistence", "housing supply", "city structure"],
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5205801",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "giacoletti-korevaar-qian-2025-housing-supply-expansions",
+    "title": "How Housing Supply Expansions Reshape Cities",
+    "authors": ["Marco Giacoletti", "Matthijs Korevaar", "Franklin Qian"],
+    "affiliations": ["Mendoza College of Business", "Erasmus School of Economics", "UNC Kenan-Flagler Business School"],
+    "published": "2025-12",
+    "published_basis": "Posted to SSRN",
+    "venue": "Working paper",
+    "kind": "Working paper",
+    "access": "Free download",
+    "categories": [
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability",
+      "Reform and Policy Evaluation"
+    ],
+    "key_point": "Using administrative microdata, we show that house prices in highly exposed neighborhoods fell by 2-3%, with declines concentrated in higher-income areas that competed most directly with the new housing. Vinex also drew higher-income households from nearby neighborhoods and increased local employment growth, especially in tradable services. [...] The model shows that local price comparisons understate the broader gains from large supply expansions: welfare rises for both worker groups, proportionally more for service workers, and remains positive after accounting for observed in-migration.",
+    "key_point_source": "Abstract",
+    "abstract": "We study the Vinex program, a large-scale relaxation of residential land supply constraints near major Dutch cities. Using administrative microdata, we show that house prices in highly exposed neighborhoods fell by 2-3%, with declines concentrated in higher-income areas that competed most directly with the new housing. Vinex also drew higher-income households from nearby neighborhoods and increased local employment growth, especially in tradable services. To interpret these patterns, we develop a quantitative spatial equilibrium model with income-dependent housing demand and a unified land market. The model shows that local price comparisons understate the broader gains from large supply expansions: welfare rises for both worker groups, proportionally more for service workers, and remains positive after accounting for observed in-migration.",
+    "keywords": ["Housing Supply", "Land Use Regulation", "House Prices", "Housing Affordability", "Residential Mobility", "Local Labor Markets", "Spatial Equilibrium", "Netherlands"],
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5840244",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "nyu-furman-center-2026-land-use-reform-tracker",
+    "title": "Land Use Reform Tracker",
+    "authors": ["NYU Furman Center"],
+    "affiliations": [],
+    "published": "2026-03",
+    "published_basis": "Tool launched",
+    "venue": "NYU Furman Center, data tool",
+    "kind": "Data tool",
+    "access": "Free",
+    "categories": [
+      "Reform and Policy Evaluation",
+      "Zoning and Land Use Regulation",
+      "Methods and Data"
+    ],
+    "key_point": "The Land Use Reform Tracker is a resource designed to provide researchers, state lawmakers, city officials, the media and others with a database they can use to gain a deeper understanding of how the land use policy landscape is changing nationally. The Tracker provides a database on enacted bills, including summaries of bill text, analysis of how the legislation compares to other states, and information on the different types of land use reforms.",
+    "key_point_source": "Tool page",
+    "source_text": "A national database of state land use reforms and analysis of how they are working. Mapping State Land Use Reforms. The Land Use Reform Tracker is a resource designed to provide researchers, state lawmakers, city officials, the media and others with a database they can use to gain a deeper understanding of how the land use policy landscape is changing nationally. The Tracker provides a database on enacted bills, including summaries of bill text, analysis of how the legislation compares to other states, and information on the different types of land use reforms. Additionally, it offers up-to-date collections of research and commentary about the legislation, information about how the reform is being implemented, and about litigation and other reactions to the reform. Track recent state statutes that reform land use, zoning and related housing policies across all 50 states.",
+    "keywords": ["state land use reform", "zoning", "legislation tracking"],
+    "url": "https://www.furmancenter.org/data-tool/land-use-reform-tracker/",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "soltas-gruber-2026-cost-of-permitting",
+    "title": "How Costly Is Permitting in Housing Development?",
+    "authors": ["Evan Soltas", "Jonathan Gruber"],
+    "affiliations": ["Princeton Economics and SPIA", "MIT Economics"],
+    "published": "2026-02",
+    "published_basis": "Date on the paper",
+    "venue": "Working paper",
+    "kind": "Working paper",
+    "access": "Free download",
+    "categories": [
+      "Permitting and Approvals",
+      "Housing Supply and Production",
+      "Construction Costs and Labor"
+    ],
+    "key_point": "Using a repeat-listing difference-in-differences estimator, we find developers pay 50 percent more ($48 per square foot) for preapproved land. Comparing similar proposed developments, preapproval raises the probability of completing construction within four years of site acquisition by 10 percentage points (30 percent). Permitting can explain one third of the gap in Los Angeles between home prices and construction costs.",
+    "key_point_source": "Abstract",
+    "abstract": "Permitting costs are widely cited, but little analyzed, as a key burden on housing development in leading U.S. cities. We measure them using an implicit market for “ready-to-issue” permits in Los Angeles, where landowners can prepay permitting costs and sell preapproved land to developers at a premium. Using a repeat-listing difference-in-differences estimator, we find developers pay 50 percent more ($48 per square foot) for preapproved land. Comparing similar proposed developments, preapproval raises the probability of completing construction within four years of site acquisition by 10 percentage points (30 percent). Permitting can explain one third of the gap in Los Angeles between home prices and construction costs.",
+    "keywords": ["building permit", "land-use regulation", "hedonic", "zoning", "capitalization"],
+    "url": "https://evansoltas.com/papers/Permitting_SoltasGruber2026.pdf",
+    "added": "2026-08-09"
   }
 ];

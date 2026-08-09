@@ -13,7 +13,16 @@
 <header class="masthead">
   <div class="wrap">
     <h1>Housing Research</h1>
-    <p class="tagline">A searchable index of housing policy research. Every summary below is quoted from the paper itself.</p>
+    <p class="tagline">A searchable index of housing policy research. Every summary below is quoted from the source itself.</p>
+
+    <nav class="tabs" aria-label="Sections">
+      <button type="button" class="tab" id="tab-research" role="tab" aria-selected="true" aria-controls="panel-research" data-tab="research">
+        Research <span class="tabcount" id="count-research" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="tab" id="tab-cases" role="tab" aria-selected="false" aria-controls="panel-cases" data-tab="cases">
+        Court Cases <span class="tabcount" id="count-cases" aria-hidden="true"></span>
+      </button>
+    </nav>
   </div>
 </header>
 
@@ -41,19 +50,12 @@
       <p class="count" id="count" role="status" aria-live="polite"></p>
       <label class="sortpick">
         <span class="sortpick-label">Sort</span>
-        <select id="sortpick">
-          <option value="published|desc">Newest first</option>
-          <option value="published|asc">Oldest first</option>
-          <option value="title|asc">Title A to Z</option>
-          <option value="title|desc">Title Z to A</option>
-          <option value="authors|asc">Author A to Z</option>
-          <option value="authors|desc">Author Z to A</option>
-        </select>
+        <select id="sortpick"></select>
       </label>
     </div>
   </section>
 
-  <div class="tablewrap">
+  <div class="tablewrap" id="panel-research" role="tabpanel" aria-labelledby="tab-research">
     <table id="grid">
       <colgroup>
         <col class="c-title"><col class="c-authors"><col class="c-published">
@@ -61,9 +63,9 @@
       </colgroup>
       <thead>
         <tr>
-          <th scope="col"><button type="button" class="sort" data-key="title">Title <span class="arrow" aria-hidden="true"></span></button></th>
-          <th scope="col"><button type="button" class="sort" data-key="authors">Authors <span class="arrow" aria-hidden="true"></span></button></th>
-          <th scope="col"><button type="button" class="sort" data-key="published">Published <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="title" data-tab="research">Title <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="authors" data-tab="research">Authors <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="published" data-tab="research">Published <span class="arrow" aria-hidden="true"></span></button></th>
           <th scope="col">Category</th>
           <th scope="col">The most important point</th>
           <th scope="col">Link</th>
@@ -71,20 +73,40 @@
       </thead>
       <tbody id="rows"></tbody>
     </table>
-
-    <p class="empty" id="empty" hidden>Nothing matched that search. Try fewer words.</p>
   </div>
 
-  <noscript><p class="empty">This page needs JavaScript turned on to search the research.</p></noscript>
+  <div class="tablewrap" id="panel-cases" role="tabpanel" aria-labelledby="tab-cases" hidden>
+    <table id="casegrid">
+      <colgroup>
+        <col class="k-name"><col class="k-year"><col class="k-forum">
+        <col class="k-finding"><col class="k-link">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col"><button type="button" class="sort" data-key="name" data-tab="cases">Case <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="year" data-tab="cases">Year <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="forum" data-tab="cases">Forum <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col">The major finding</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody id="caserows"></tbody>
+    </table>
+  </div>
+
+  <p class="empty" id="empty" hidden>Nothing matched that search. Try fewer words.</p>
+
+  <noscript><p class="empty">This page needs JavaScript turned on to search this page.</p></noscript>
 
 </main>
 
 <footer class="wrap foot">
-  <p>Titles, authors, and quoted findings are recorded as the publisher prints them. Where sentences that sit apart in the original have been joined, the gap is marked <span class="gapmark">[...]</span>. The published column gives the month the linked version became available, which is not always the year printed on the journal issue. Hover over a date to see where it comes from.</p>
+  <p>Titles, authors, case names, and quoted findings are recorded as the source prints them. Where passages that sit apart in the original have been joined, the gap is marked <span class="gapmark">[...]</span>. The published column gives the month the linked version became available, which is not always the year printed on the journal issue. Hover over a date to see where it comes from.</p>
 </footer>
 
 <script src="data/categories.js"></script>
 <script src="data/papers.js"></script>
+<script src="data/cases.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
