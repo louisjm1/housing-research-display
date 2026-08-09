@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Housing Research</title>
+<meta name="description" content="A searchable index of housing policy research, quoted from the source.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231d5c56'/%3E%3Cpath d='M8 22V10h3v4.6h4.4V10h3v12h-3v-4.7H11V22H8zm14 0V10h2.9v12H22z' fill='%23fbfaf8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <h1>Housing Research</h1>
+    <p class="tagline">A searchable index of housing policy research. Every summary below is quoted from the paper itself.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="controls" aria-label="Search and filter">
+    <div class="searchrow">
+      <label class="searchfield">
+        <span class="visually-hidden">Search the research</span>
+        <svg class="searchicon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <circle cx="9" cy="9" r="6"></circle><line x1="13.5" y1="13.5" x2="18" y2="18"></line>
+        </svg>
+        <input id="q" type="search" autocomplete="off" spellcheck="false"
+               placeholder="Search titles, authors, and findings">
+      </label>
+      <div class="rowactions">
+        <button id="reset" type="button" class="btn btn-quiet" hidden>Clear all</button>
+        <button id="export" type="button" class="btn">Download as spreadsheet</button>
+      </div>
+    </div>
+
+    <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+
+    <div class="resultbar">
+      <p class="count" id="count" role="status" aria-live="polite"></p>
+      <label class="sortpick">
+        <span class="sortpick-label">Sort</span>
+        <select id="sortpick">
+          <option value="added|desc">Newest first</option>
+          <option value="added|asc">Oldest first</option>
+          <option value="title|asc">Title A to Z</option>
+          <option value="title|desc">Title Z to A</option>
+          <option value="authors|asc">Author A to Z</option>
+          <option value="authors|desc">Author Z to A</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <div class="tablewrap">
+    <table id="grid">
+      <colgroup>
+        <col class="c-title"><col class="c-authors"><col class="c-cats"><col class="c-point"><col class="c-link">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col"><button type="button" class="sort" data-key="title">Title <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="authors">Authors <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col">Category</th>
+          <th scope="col">The most important point</th>
+          <th scope="col"><button type="button" class="sort" data-key="added">Link <span class="arrow" aria-hidden="true"></span></button></th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <p class="empty" id="empty" hidden>Nothing matched that search. Try fewer words.</p>
+  </div>
+
+  <noscript><p class="empty">This page needs JavaScript turned on to search the research.</p></noscript>
+
+</main>
+
+<footer class="wrap foot">
+  <p>Titles, authors, and quoted findings are recorded as the publisher prints them. Where sentences that sit apart in the original have been joined, the gap is marked <span class="gapmark">[...]</span>.</p>
+</footer>
+
+<script src="data/categories.js"></script>
+<script src="data/papers.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
