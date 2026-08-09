@@ -9,6 +9,22 @@
 
   var GAP = '[...]';
 
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+
+  /* How one paper sits against another, and what the other paper sees. */
+  var RELATIONS = {
+    follows:   { label: 'Follow-up to',  inverse: 'followed_by' },
+    responds:  { label: 'Responds to',   inverse: 'answered_by' },
+    companion: { label: 'Companion to',  inverse: 'companion' }
+  };
+
+  var INVERSE_LABELS = {
+    followed_by: 'Followed by',
+    answered_by: 'Answered by',
+    companion: 'Companion to'
+  };
+
   var el = {
     q: document.getElementById('q'),
     chips: document.getElementById('chips'),
@@ -24,11 +40,38 @@
   var state = {
     query: '',
     cats: [],
-    sortKey: 'added',
+    sortKey: 'published',
     sortDir: 'desc'
   };
 
-  var DEFAULT_DIR = { title: 'asc', authors: 'asc', added: 'desc' };
+  var DEFAULT_DIR = { title: 'asc', authors: 'asc', published: 'desc' };
+
+  var byId = {};
+  PAPERS.forEach(function (p) { byId[p.id] = p; });
+
+  /* Both halves of every link, so only the newer paper has to declare it. */
+  var links = {};
+  function addLink(fromId, toId, label) {
+    if (!byId[toId] || fromId === toId) return;
+    if (!links[fromId]) links[fromId] = [];
+    var already = links[fromId].some(function (l) { return l.id === toId; });
+    if (!already) links[fromId].push({ id: toId, label: label });
+  }
+  PAPERS.forEach(function (p) {
+    (p.related || []).forEach(function (rel) {
+      var spec = RELATIONS[rel.relation];
+      if (!spec) return;
+      addLink(p.id, rel.id, spec.label);
+      addLink(rel.id, p.id, INVERSE_LABELS[spec.inverse]);
+    });
+  });
+
+  function monthYear(value) {
+    var parts = String(value || '').split('-');
+    var m = parseInt(parts[1], 10);
+    if (!parts[0] || !m || m < 1 || m > 12) return String(value || '');
+    return MONTHS[m - 1] + ' ' + parts[0];
+  }
 
   /* ---------- helpers ---------- */
 
@@ -56,7 +99,11 @@
         p.kind,
         p.access,
         p.doi,
-        p.year
+        p.published,
+        monthYear(p.published),
+        (links[p.id] || []).map(function (l) {
+          return l.label + ' ' + (byId[l.id] ? byId[l.id].title : '');
+        }).join(' ')
       ].join('   '));
     }
     return p._hay;
@@ -136,6 +183,77 @@
     return frag;
   }
 
+  /* A quiet chain mark, drawn rather than fetched. */
+  function linkIcon() {
+    var ns = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('class', 'relicon');
+    svg.setAttribute('viewBox', '0 0 16 16');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    ['M6.6 9.4a2.6 2.6 0 0 1 0-3.7l2.1-2.1a2.6 2.6 0 1 1 3.7 3.7l-1 1',
+     'M9.4 6.6a2.6 2.6 0 0 1 0 3.7l-2.1 2.1a2.6 2.6 0 1 1-3.7-3.7l1-1'
+    ].forEach(function (d) {
+      var path = document.createElementNS(ns, 'path');
+      path.setAttribute('d', d);
+      svg.appendChild(path);
+    });
+    return svg;
+  }
+
+  /* The one line that says this paper and another one belong together. */
+  function relatedLine(link, tokens) {
+    var other = byId[link.id];
+    var line = document.createElement('p');
+    line.className = 'related';
+    line.appendChild(linkIcon());
+    var label = document.createElement('span');
+    label.className = 'rel-label';
+    label.textContent = link.label + ' ';
+    line.appendChild(label);
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'rel-link';
+    btn.appendChild(highlighted(other.title, tokens));
+    btn.setAttribute('aria-label', link.label + ' ' + other.title + '. Show that paper.');
+    btn.addEventListener('click', function () { goToPaper(other.id); });
+    ['mouseenter', 'focus'].forEach(function (ev) {
+      btn.addEventListener(ev, function () { markPartner(other.id, true); });
+    });
+    ['mouseleave', 'blur'].forEach(function (ev) {
+      btn.addEventListener(ev, function () { markPartner(other.id, false); });
+    });
+    line.appendChild(btn);
+    return line;
+  }
+
+  function rowFor(id) {
+    return el.rows.querySelector('tr[data-id="' + id + '"]');
+  }
+
+  function markPartner(id, on) {
+    var row = rowFor(id);
+    if (row) row.classList.toggle('partner', on);
+  }
+
+  var stillMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function goToPaper(id) {
+    var row = rowFor(id);
+    if (!row) {
+      /* It is filtered out of view, so open the shutters first. */
+      resetAll();
+      row = rowFor(id);
+    }
+    if (!row) return;
+    row.scrollIntoView({ behavior: stillMotion ? 'auto' : 'smooth', block: 'center' });
+    row.classList.remove('flash');
+    void row.offsetWidth;
+    row.classList.add('flash');
+    var titleLink = row.querySelector('.title a');
+    if (titleLink) titleLink.focus({ preventScroll: true });
+  }
+
   /* ---------- selection ---------- */
 
   function textMatched() {
@@ -155,7 +273,7 @@
     } else if (state.sortKey === 'authors') {
       va = lastName((a.authors || [])[0]); vb = lastName((b.authors || [])[0]);
     } else {
-      va = String(a.added || ''); vb = String(b.added || '');
+      va = String(a.published || ''); vb = String(b.published || '');
     }
     if (va < vb) return -1 * dir;
     if (va > vb) return 1 * dir;
@@ -212,6 +330,7 @@
 
     list.forEach(function (p) {
       var tr = document.createElement('tr');
+      tr.dataset.id = p.id;
 
       /* title */
       var tdTitle = document.createElement('td');
@@ -227,8 +346,11 @@
       tdTitle.appendChild(h);
       var venue = document.createElement('p');
       venue.className = 'venue';
-      venue.appendChild(highlighted([p.venue, p.year].filter(Boolean).join(', '), tokens));
+      venue.appendChild(highlighted(p.venue || '', tokens));
       tdTitle.appendChild(venue);
+      (links[p.id] || []).forEach(function (link) {
+        tdTitle.appendChild(relatedLine(link, tokens));
+      });
       tr.appendChild(tdTitle);
 
       /* authors */
@@ -242,6 +364,18 @@
         tdAuth.appendChild(s);
       });
       tr.appendChild(tdAuth);
+
+      /* published */
+      var tdWhen = document.createElement('td');
+      tdWhen.className = 'when';
+      tdWhen.setAttribute('data-label', 'Published');
+      var when = document.createElement('time');
+      when.className = 'whenval';
+      if (p.published) when.setAttribute('datetime', p.published);
+      if (p.published_basis) when.title = p.published_basis;
+      when.appendChild(highlighted(monthYear(p.published), tokens));
+      tdWhen.appendChild(when);
+      tr.appendChild(tdWhen);
 
       /* categories */
       var tdCat = document.createElement('td');
@@ -423,18 +557,22 @@
   }
 
   function downloadCsv() {
-    var head = ['Title', 'Authors', 'Category', 'The most important point',
-                'Quoted from', 'Publication', 'Year', 'Access', 'Link'];
+    var head = ['Title', 'Authors', 'Published', 'Category', 'The most important point',
+                'Quoted from', 'Publication', 'Date basis', 'Related research', 'Access', 'Link'];
     var lines = [head.map(csvCell).join(',')];
     selected().forEach(function (p) {
       lines.push([
         p.title,
         (p.authors || []).join(', '),
+        monthYear(p.published),
         (p.categories || []).join(', '),
         p.key_point,
         p.key_point_source,
         p.venue,
-        p.year,
+        p.published_basis,
+        (links[p.id] || []).map(function (l) {
+          return l.label + ' ' + (byId[l.id] ? byId[l.id].title : l.id);
+        }).join(', '),
         p.access,
         p.url
       ].map(csvCell).join(','));

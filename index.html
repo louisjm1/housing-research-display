@@ -42,8 +42,8 @@
       <label class="sortpick">
         <span class="sortpick-label">Sort</span>
         <select id="sortpick">
-          <option value="added|desc">Newest first</option>
-          <option value="added|asc">Oldest first</option>
+          <option value="published|desc">Newest first</option>
+          <option value="published|asc">Oldest first</option>
           <option value="title|asc">Title A to Z</option>
           <option value="title|desc">Title Z to A</option>
           <option value="authors|asc">Author A to Z</option>
@@ -56,15 +56,17 @@
   <div class="tablewrap">
     <table id="grid">
       <colgroup>
-        <col class="c-title"><col class="c-authors"><col class="c-cats"><col class="c-point"><col class="c-link">
+        <col class="c-title"><col class="c-authors"><col class="c-published">
+        <col class="c-cats"><col class="c-point"><col class="c-link">
       </colgroup>
       <thead>
         <tr>
           <th scope="col"><button type="button" class="sort" data-key="title">Title <span class="arrow" aria-hidden="true"></span></button></th>
           <th scope="col"><button type="button" class="sort" data-key="authors">Authors <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col"><button type="button" class="sort" data-key="published">Published <span class="arrow" aria-hidden="true"></span></button></th>
           <th scope="col">Category</th>
           <th scope="col">The most important point</th>
-          <th scope="col"><button type="button" class="sort" data-key="added">Link <span class="arrow" aria-hidden="true"></span></button></th>
+          <th scope="col">Link</th>
         </tr>
       </thead>
       <tbody id="rows"></tbody>
@@ -78,7 +80,7 @@
 </main>
 
 <footer class="wrap foot">
-  <p>Titles, authors, and quoted findings are recorded as the publisher prints them. Where sentences that sit apart in the original have been joined, the gap is marked <span class="gapmark">[...]</span>.</p>
+  <p>Titles, authors, and quoted findings are recorded as the publisher prints them. Where sentences that sit apart in the original have been joined, the gap is marked <span class="gapmark">[...]</span>. The published column gives the month the linked version became available, which is not always the year printed on the journal issue. Hover over a date to see where it comes from.</p>
 </footer>
 
 <script src="data/categories.js"></script>

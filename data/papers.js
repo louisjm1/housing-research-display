@@ -4,7 +4,14 @@
 
    key_point holds wording taken straight from the paper. Where sentences that
    are not next to each other in the original have been joined, the gap is
-   marked with [...]. Nothing inside a quotation is reworded. */
+   marked with [...]. Nothing inside a quotation is reworded.
+
+   published is the month the thing we link to actually became available,
+   written as YYYY-MM. published_basis records where that date comes from,
+   because a journal issue year and an online release date often differ.
+
+   related points at another entry by its id. Only the newer paper needs to
+   declare the link. The page works out the other direction on its own. */
 
 window.PAPERS = [
   {
@@ -12,7 +19,8 @@ window.PAPERS = [
     "title": "Rezoning The Rust Belt",
     "authors": ["Brian Connolly", "Noah Kazis"],
     "affiliations": ["University of Michigan at Ann Arbor", "University of Michigan Law School"],
-    "year": 2026,
+    "published": "2026-03",
+    "published_basis": "Posted to SSRN",
     "venue": "Washington University Law Review, Volume 104 (forthcoming 2027)",
     "kind": "Law review article",
     "access": "Free download",
@@ -33,8 +41,9 @@ window.PAPERS = [
     "title": "The Cumulative Exposure to Exclusionary Zoning in Impoverished Neighborhoods",
     "authors": ["Matthew Mleczko"],
     "affiliations": [],
-    "year": 2026,
-    "venue": "Demography, Volume 63, Issue 1, pages 213-239",
+    "published": "2026-02",
+    "published_basis": "Journal issue",
+    "venue": "Demography, Volume 63, Issue 1 (2026), pages 213-239",
     "kind": "Peer reviewed article",
     "access": "Open access",
     "categories": [
@@ -48,6 +57,63 @@ window.PAPERS = [
     "keywords": ["Zoning", "Land use", "Housing", "Poverty", "Marginal structural models"],
     "doi": "10.1215/00703370-12468457",
     "url": "https://read.dukeupress.edu/demography/article/63/1/213/407848/The-Cumulative-Exposure-to-Exclusionary-Zoning-in",
+    "added": "2026-08-08"
+  },
+  {
+    "id": "been-ellen-oregan-2019-supply-skepticism",
+    "title": "Supply Skepticism: Housing Supply and Affordability",
+    "authors": ["Vicki Been", "Ingrid Gould Ellen", "Katherine O’Regan"],
+    "affiliations": [
+      "New York University School of Law, NYU Furman Center",
+      "NYU Wagner School, NYU Furman Center",
+      "NYU Wagner School, NYU Furman Center"
+    ],
+    "published": "2018-12",
+    "published_basis": "Published online",
+    "venue": "Housing Policy Debate, Volume 29, Issue 1 (2019), pages 25-40",
+    "kind": "Peer reviewed article",
+    "access": "Subscription",
+    "categories": [
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability",
+      "Zoning and Land Use Regulation"
+    ],
+    "key_point": "We ultimately conclude, from both theory and empirical evidence, that adding new homes moderates price increases and therefore makes housing more affordable to low- and moderate-income families. We argue further that there are additional reasons to be concerned about inadequate supply response and assess the evidence on those effects of limiting supply, including preventing workers from moving to areas with growing job opportunities. Finally, we conclude by emphasizing that new market-rate housing is necessary but not sufficient. Government intervention is critical to ensure that supply is added at prices affordable to a range of incomes.",
+    "key_point_source": "Abstract",
+    "abstract": "Growing numbers of affordable housing advocates and community members are questioning the premise that increasing the supply of market-rate housing will result in housing that is more affordable. Economists and other experts who favor increases in supply have failed to take these supply skeptics seriously. But left unanswered, supply skepticism is likely to continue to feed local opposition to housing construction, and further increase the prevalence and intensity of land-use regulations that limit construction. This article is meant to bridge the divide, addressing each of the key arguments supply skeptics make and reviewing what research has shown about housing supply and its effect on affordability. We ultimately conclude, from both theory and empirical evidence, that adding new homes moderates price increases and therefore makes housing more affordable to low- and moderate-income families. We argue further that there are additional reasons to be concerned about inadequate supply response and assess the evidence on those effects of limiting supply, including preventing workers from moving to areas with growing job opportunities. Finally, we conclude by emphasizing that new market-rate housing is necessary but not sufficient. Government intervention is critical to ensure that supply is added at prices affordable to a range of incomes.",
+    "keywords": ["Housing", "low-income housing", "land use/zoning", "construction/building", "development/revitalization", "markets", "prices", "regulation"],
+    "doi": "10.1080/10511482.2018.1476899",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/10511482.2018.1476899",
+    "added": "2026-08-08"
+  },
+  {
+    "id": "been-ellen-oregan-2025-supply-skepticism-revisited",
+    "title": "Supply Skepticism Revisited",
+    "authors": ["Vicki Been", "Ingrid Gould Ellen", "Katherine O’Regan"],
+    "affiliations": [
+      "New York University School of Law, NYU Furman Center",
+      "NYU Wagner School, NYU Furman Center",
+      "NYU Wagner School, NYU Furman Center"
+    ],
+    "published": "2024-11",
+    "published_basis": "Published online",
+    "venue": "Housing Policy Debate, Volume 35, Issue 1 (2025), pages 96-113",
+    "kind": "Peer reviewed article",
+    "access": "Free access",
+    "categories": [
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability",
+      "Homelessness and Displacement"
+    ],
+    "key_point": "Although “supply skeptics” claim that new housing supply does not slow growth in rents, our review of rigorous recent studies finds that: (a) increases in housing supply reduce rents or slow the growth in rents in the region; (b) in some circumstances, new construction also reduces rents or rent growth in the surrounding neighborhood; (c) while new supply is associated with measures of gentrification, it has not been shown to heighten displacement of lower income households; and (d) the chains of moves resulting from new supply free up both for-sale and rented dwelling units that are then occupied by households across the income spectrum, and provide higher income households with alternatives to the older units for which they might otherwise outbid lower income residents.",
+    "key_point_source": "Abstract",
+    "abstract": "Although “supply skeptics” claim that new housing supply does not slow growth in rents, our review of rigorous recent studies finds that: (a) increases in housing supply reduce rents or slow the growth in rents in the region; (b) in some circumstances, new construction also reduces rents or rent growth in the surrounding neighborhood; (c) while new supply is associated with measures of gentrification, it has not been shown to heighten displacement of lower income households; and (d) the chains of moves resulting from new supply free up both for-sale and rented dwelling units that are then occupied by households across the income spectrum, and provide higher income households with alternatives to the older units for which they might otherwise outbid lower income residents.",
+    "keywords": ["affordability", "land use/zoning", "gentrification", "rental housing", "multifamily", "construction/building"],
+    "doi": "10.1080/10511482.2024.2418044",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/10511482.2024.2418044",
+    "related": [
+      { "id": "been-ellen-oregan-2019-supply-skepticism", "relation": "follows" }
+    ],
     "added": "2026-08-08"
   }
 ];

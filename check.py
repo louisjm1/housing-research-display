@@ -26,10 +26,15 @@ MIN_POINT_CHARS = 150
 MAX_CATEGORIES = 3
 ID_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+MONTH_PATTERN = re.compile(r"^(19|20)\d{2}-(0[1-9]|1[0-2])$")
+
+# How one paper can point at another. "follows" means this paper came later.
+RELATIONS = {"follows", "responds", "companion"}
+NEWER_THAN_TARGET = {"follows", "responds"}
 
 REQUIRED = [
-    "id", "title", "authors", "year", "venue", "categories",
-    "key_point", "key_point_source", "abstract", "url", "added",
+    "id", "title", "authors", "published", "published_basis", "venue",
+    "categories", "key_point", "key_point_source", "abstract", "url", "added",
 ]
 
 
@@ -76,6 +81,7 @@ def check():
     if err:
         return [err], notes
 
+    by_id = {p["id"]: p for p in papers if isinstance(p, dict) and p.get("id")}
     seen_ids = {}
     seen_urls = {}
 
@@ -107,8 +113,9 @@ def check():
         if not isinstance(paper["authors"], list):
             problems.append('"%s" needs its authors written as a list.' % label)
 
-        if not isinstance(paper["year"], int) or not (1900 <= paper["year"] <= 2100):
-            problems.append('"%s" has a year that does not look right: %r' % (label, paper["year"]))
+        if not MONTH_PATTERN.match(str(paper["published"])):
+            problems.append('"%s" needs its published date written as a month, YYYY-MM. '
+                            'It currently reads: %r' % (label, paper["published"]))
 
         if not DATE_PATTERN.match(str(paper["added"])):
             problems.append('"%s" needs its added date written as YYYY-MM-DD.' % label)
@@ -146,6 +153,47 @@ def check():
         else:
             notes.append('"%s" quotes the %s rather than the abstract, so the wording could not '
                          'be checked against the stored abstract.' % (label, source))
+
+    # Links between papers, checked once every id is known.
+    link_count = 0
+    for paper in papers:
+        label = paper.get("title") or paper.get("id") or "an entry"
+        related = paper.get("related")
+        if related is None:
+            continue
+        if not isinstance(related, list):
+            problems.append('"%s" needs its related research written as a list.' % label)
+            continue
+        targets = []
+        for rel in related:
+            if not isinstance(rel, dict) or not rel.get("id") or not rel.get("relation"):
+                problems.append('"%s" has a related entry missing an id or a relation.' % label)
+                continue
+            if rel["relation"] not in RELATIONS:
+                problems.append('"%s" uses a link type that does not exist: "%s". The choices are %s.'
+                                % (label, rel["relation"], ", ".join(sorted(RELATIONS))))
+                continue
+            if rel["id"] == paper.get("id"):
+                problems.append('"%s" is linked to itself.' % label)
+                continue
+            if rel["id"] not in by_id:
+                problems.append('"%s" is linked to a paper that is not in the library: "%s".'
+                                % (label, rel["id"]))
+                continue
+            if rel["id"] in targets:
+                problems.append('"%s" is linked to the same paper twice.' % label)
+                continue
+            targets.append(rel["id"])
+            link_count += 1
+            other = by_id[rel["id"]]
+            if rel["relation"] in NEWER_THAN_TARGET:
+                if str(paper.get("published", "")) <= str(other.get("published", "")):
+                    problems.append('"%s" is marked as a "%s" of "%s", so it should have the later '
+                                    'published date, and it does not.'
+                                    % (label, rel["relation"], other.get("title", rel["id"])))
+
+    if link_count:
+        notes.append("Links between papers: %d." % link_count)
 
     used = set()
     for paper in papers:
