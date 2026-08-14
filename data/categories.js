@@ -24,6 +24,10 @@ window.CATEGORIES = [
     "blurb": "What happens to the homes people leave behind when new housing opens."
   },
   {
+    "name": "Rent Regulation and Tenant Protections",
+    "blurb": "Rules that cap rents, govern evictions, or hold landlords to account."
+  },
+  {
     "name": "Segregation and Neighborhood Inequality",
     "blurb": "How housing policy sorts people across places and hardens disadvantage."
   },
