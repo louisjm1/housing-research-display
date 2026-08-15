@@ -188,8 +188,8 @@ window.PAPERS = [
     "also_titled": "Can We Rebuild a City? The Dynamics of Urban Redevelopment",
     "authors": ["Vincent Rollet"],
     "affiliations": ["Massachusetts Institute of Technology"],
-    "published": "2025-04",
-    "published_basis": "Posted to SSRN",
+    "published": "2025-10",
+    "published_basis": "Date on the paper",
     "venue": "Working paper, Massachusetts Institute of Technology",
     "kind": "Working paper",
     "access": "Free download",
@@ -198,11 +198,12 @@ window.PAPERS = [
       "Housing Supply and Production",
       "Rents, Prices, and Affordability"
     ],
-    "key_point": "While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings and generate considerable persistence in city structure. Furthermore, due to migration spillovers, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
+    "key_point": "While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings. These costs generate considerable persistence in city structure and substantially lower the expected gains from relaxing zoning. Furthermore, due to migration, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
     "key_point_source": "Abstract",
-    "abstract": "Cities increasingly grow through redevelopment—demolishing old buildings to make way for new ones. This paper studies this process and how it is influenced by zoning, which regulates the size and use of new buildings. I build a dynamic general equilibrium model of floorspace supply and demand, which I estimate using a newly constructed parcel-level panel of buildings and zoning in New York City. I validate the model using quasi-experimental variation from recent zoning reforms and apply it to evaluate the effect of relaxing regulation on construction and affordability. While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings and generate considerable persistence in city structure. Furthermore, due to migration spillovers, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
-    "keywords": ["zoning", "redevelopment", "historical persistence", "housing supply", "city structure"],
-    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5205801",
+    "abstract": "Cities increasingly grow through redevelopment—demolishing old buildings to make way for new ones. This paper studies this process and how it is influenced by zoning, which regulates the size and uses of new buildings, using New York City as a case study. I build the first parcel-level panel of a city's buildings, zoning, and floorspace prices. This data allows me to estimate a new dynamic spatial equilibrium model of floorspace supply and demand. I validate the model using quasi-experimental variation from recent zoning reforms and apply it to evaluate the effects of relaxing regulation on construction and affordability. While zoning strongly constrains city growth, the effects of relaxing regulation take decades to materialize and are limited in inexpensive or densely built areas. This is due to the large fixed costs of redevelopment, which rise sharply with the size of existing buildings. These costs generate considerable persistence in city structure and substantially lower the expected gains from relaxing zoning. Furthermore, due to migration, the affordability benefits of zoning reform largely accrue to households outside the rezoned neighborhoods.",
+    "transcription_note": "Repointed on 2026-08-15 from the April 2025 SSRN posting to the author's own copy, which he marks as the most recent version and dates October 2025. The wording of the abstract changed between the two, so the quotation was re-read from this version. Read from the PDF; the one em dash the extraction dropped was restored, and the earlier SSRN posting carries the same dash in the same sentence.",
+    "keywords": ["City structure", "zoning", "redevelopment", "historical persistence", "housing supply", "New York City", "floorspace"],
+    "url": "https://vrollet.github.io/files/city_structure.pdf",
     "added": "2026-08-09"
   },
   {
@@ -543,6 +544,52 @@ window.PAPERS = [
     "transcription_note": "The article has no abstract, so source_text holds the passages that were read on the page rather than one continuous run. Passages that sit apart are separated with the same [...] mark used in the quotations.",
     "keywords": ["Zillow Observed Rent Index", "American Community Survey", "ZIP code", "rent growth", "housing shortage", "older housing", "low-income neighborhoods"],
     "url": "https://www.pew.org/en/research-and-analysis/articles/2025/07/31/new-housing-slows-rent-growth-most-for-older-more-affordable-units",
+    "added": "2026-08-15"
+  },
+  {
+    "id": "zhang-zhu-2025-driving-restriction-boundary-housing-prices",
+    "title": "Driving restriction boundary and housing prices",
+    "authors": ["Yichuan Zhang", "Tianyun Zhu"],
+    "affiliations": [],
+    "published": "2025-07",
+    "published_basis": "Published online",
+    "venue": "Journal of Housing Economics, Volume 69 (2025), article 102083",
+    "kind": "Peer reviewed article",
+    "access": "Subscription",
+    "categories": [
+      "Transportation and Location",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "Combining the difference-in-differences framework with the boundary discontinuity design, we find that the driving restriction policy on average led to a 6.36% increase in the housing price of the restricted zone. We also find that after the driving restriction boundary was removed and expanded, the observed increase in the housing price disparity across the initial boundary diminished. This paper presents the first empirical evidence on the heterogeneous effect of a driving restriction on housing prices across the driving restriction boundary.",
+    "key_point_source": "Abstract",
+    "abstract": "This paper investigates the boundary effect of a nonlocal-license-plate-based driving restriction policy on the housing market of Shenzhen, China. Combining the difference-in-differences framework with the boundary discontinuity design, we find that the driving restriction policy on average led to a 6.36% increase in the housing price of the restricted zone. We also find that after the driving restriction boundary was removed and expanded, the observed increase in the housing price disparity across the initial boundary diminished. This paper presents the first empirical evidence on the heterogeneous effect of a driving restriction on housing prices across the driving restriction boundary.",
+    "transcription_note": "The publisher's own page would not open, so the abstract was read from the RePEc mirror of the publisher record. The month shown is when the article went online, which Crossref records as 21 July 2025. The September 2025 date is the print issue and sits in the publication line.",
+    "keywords": ["Housing price", "Driving restriction", "Boundary discontinuity", "Hedonics", "Shenzhen", "China", "license plate"],
+    "doi": "10.1016/j.jhe.2025.102083",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1051137725000427",
+    "added": "2026-08-15"
+  },
+  {
+    "id": "gu-munro-2025-minneapolis-2040-zoning-reform",
+    "title": "Zoning Reforms and Housing Affordability: Evidence from the Minneapolis 2040 Plan",
+    "authors": ["Helena Gu", "David Munro"],
+    "affiliations": ["Middlebury College", "Department of Economics, Middlebury College"],
+    "published": "2025-07",
+    "published_basis": "Date on the paper",
+    "venue": "GLO Discussion Paper Series, number 1629",
+    "kind": "Working paper",
+    "access": "Free download",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Reform and Policy Evaluation",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "Using a synthetic control approach, this paper finds that the reform reduced the growth of housing costs over the subsequent five years: home prices were 16-34% lower and rents 17.5-34% lower than a counterfactual Minneapolis. Placebo tests show these declines were the steepest among 83 donor cities (p=0.012). The effects are consistent across multiple robustness exercises and are not the result of new housing supply, but are likely due to weakened housing demand.",
+    "key_point_source": "Abstract",
+    "abstract": "In 2018, Minneapolis became the first U.S. city to eliminate single-family zoning through the Minneapolis 2040 Plan, with a central focus on improving housing affordability. Using a synthetic control approach, this paper finds that the reform reduced the growth of housing costs over the subsequent five years: home prices were 16-34% lower and rents 17.5-34% lower than a counterfactual Minneapolis. Placebo tests show these declines were the steepest among 83 donor cities (p=0.012). The effects are consistent across multiple robustness exercises and are not the result of new housing supply, but are likely due to weakened housing demand.",
+    "transcription_note": "The abstract was read from the RePEc record, which prints it cleanly. The month comes from the cover page of the paper itself, which is dated July 2025.",
+    "keywords": ["Zoning reform", "Land use regulation", "House prices", "Rental prices", "Synthetic control", "Minneapolis 2040", "single-family zoning", "upzoning"],
+    "url": "https://ideas.repec.org/p/zbw/glodps/1629.html",
     "added": "2026-08-15"
   }
 ];
