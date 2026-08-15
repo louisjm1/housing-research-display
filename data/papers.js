@@ -120,10 +120,14 @@ window.PAPERS = [
     "id": "fang-kim-tyndall-2025-downmarket-impact-honolulu",
     "title": "The Downmarket Impact of New Multifamily Housing: Evidence from a Honolulu Condo Tower",
     "authors": ["Limin Fang", "Emi Kim", "Justin Tyndall"],
-    "affiliations": ["University of British Columbia", "Harvard University", "University of Hawaii at Manoa"],
+    "affiliations": [
+      "University of British Columbia, Sauder School of Business",
+      "Harvard University, Graduate School of Design",
+      "University of Hawai'i at Manoa, University of Hawai'i Economic Research Organization"
+    ],
     "published": "2025-11",
-    "published_basis": "Posted to SSRN",
-    "venue": "Real Estate Economics (2026)",
+    "published_basis": "Date on the paper",
+    "venue": "UHERO Working Paper 2025-03. Published in Real Estate Economics (2026)",
     "kind": "Peer reviewed article",
     "access": "Free download",
     "categories": [
@@ -134,7 +138,8 @@ window.PAPERS = [
     "key_point": "The vacated homes were substantially cheaper than the new units and spanned diverse locations and housing types. Income-restricted units produced fewer secondary vacancies, but those vacancies were concentrated at lower price points. Our results show that new condominium construction eases supply constraints and expands affordability in a local housing market, and the contrast between market-rate and income-restricted units has important implications for inclusionary zoning policies.",
     "key_point_source": "Abstract",
     "abstract": "We test whether new condominium construction generates vacancies in a local housing market through induced moves. Using detailed address-history microdata, we track households who moved into a newly built 512-unit condominium tower in Honolulu, Hawai'i, which included both market-rate and income-restricted units. We identify prior addresses and follow vacancy chains across multiple rounds of moves. The vacated homes were substantially cheaper than the new units and spanned diverse locations and housing types. Income-restricted units produced fewer secondary vacancies, but those vacancies were concentrated at lower price points. Our results show that new condominium construction eases supply constraints and expands affordability in a local housing market, and the contrast between market-rate and income-restricted units has important implications for inclusionary zoning policies.",
-    "keywords": ["Housing Supply", "Urban Development", "Land-Use Regulation", "Filtering"],
+    "transcription_note": "Checked against the authors' own working paper, UHERO 2025-03, dated 20 November 2025, at uhero.hawaii.edu. That copy confirms the abstract word for word, including the hyphen in income-restricted, which the SSRN page had run together at a line break. Affiliations were taken from the working paper rather than the shorter SSRN listing.",
+    "keywords": ["Housing Supply", "Urban Development", "Land-Use Regulation", "Filtering", "UHERO", "vacancy chains", "Honolulu", "inclusionary zoning"],
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5780364",
     "added": "2026-08-09"
   },
