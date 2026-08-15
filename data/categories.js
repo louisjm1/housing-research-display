@@ -56,6 +56,10 @@ window.CATEGORIES = [
     "blurb": "What it costs to build, including materials, labor, and productivity."
   },
   {
+    "name": "Building Codes and Safety",
+    "blurb": "The standards a building has to meet, and how safe the result turns out to be."
+  },
+  {
     "name": "Transportation and Location",
     "blurb": "Where housing sits relative to jobs, transit, and travel."
   },

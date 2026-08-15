@@ -625,5 +625,28 @@ window.PAPERS = [
     "doi": "10.1177/00221465251391834",
     "url": "https://journals.sagepub.com/doi/abs/10.1177/00221465251391834",
     "added": "2026-08-15"
+  },
+  {
+    "id": "pew-2025-modern-multifamily-fire-protection",
+    "title": "Modern Multifamily Buildings Provide the Most Fire Protection",
+    "authors": ["The Pew Charitable Trusts"],
+    "affiliations": [],
+    "published": "2025-09",
+    "published_basis": "Publication date",
+    "venue": "The Pew Charitable Trusts, Housing Policy, issue brief",
+    "kind": "Issue brief",
+    "access": "Free",
+    "categories": [
+      "Building Codes and Safety",
+      "Health and Wellbeing",
+      "Housing Supply and Production"
+    ],
+    "key_point": "Pew found that the fire death rate in modern multifamily buildings nationwide was less than one-sixth the rate found in both single-family homes and pre-2000 apartment buildings. The fire death rate for modern apartments was 1.2 per million residents in 2023, compared with 7.6 per million residents in single-family homes and 7.7 per million in older apartments. The new multifamily fire death rates are lower in both small and large apartment buildings. [...] This research indicates that building more new multifamily buildings would reduce fire deaths.",
+    "key_point_source": "Issue brief",
+    "source_text": "Rate of fire death in modern apartments is one-sixth the rate of single-family houses and older apartment buildings [...] Concerns about fire safety likewise inhibit construction even when research demonstrates that those concerns are misplaced: In almost every jurisdiction in the U.S., building codes mandate that four-to six-story apartment buildings have two separate stairways, making it difficult to fit them on urban lots, even though buildings with single staircases are as safe as two-stair buildings. [...] For this report, Pew tracked all publicly reported residential fire deaths in the United States in 2023 (the most recent year for which extensive data is available). Pew found that the fire death rate in modern multifamily buildings nationwide was less than one-sixth the rate found in both single-family homes and pre-2000 apartment buildings. The fire death rate for modern apartments was 1.2 per million residents in 2023, compared with 7.6 per million residents in single-family homes and 7.7 per million in older apartments. The new multifamily fire death rates are lower in both small and large apartment buildings. In all but one case, state-level fire death rates were also lower in new multifamily buildings, demonstrating the consistency of this result across regions. [...] This research indicates that building more new multifamily buildings would reduce fire deaths. What's more, multifamily buildings are less likely than single-family homes to be built in areas prone to wildfires, which would further reduce fire death rates. [...] 6% of Americans live in modern apartments, but only 1% of residential fire deaths in 2023 occurred in these buildings. [...] Modern single-family homes are also much safer than older ones. Single-family homes built since 2010 have a fire-death rate that is one-third the death rate of homes built prior to 1970.",
+    "transcription_note": "The brief carries no author byline, so it is credited to the organization. The staff listed against it are Liz Clifford, Alex Horowitz and Seva Rodnyansky, all of Pew's housing policy team. The brief has no abstract, so source_text holds the passages read on the page rather than one continuous run, separated by the same [...] mark used in the quotations. The phrase \"four-to six-story\" is reproduced exactly as Pew prints it.",
+    "keywords": ["fire safety", "fire death rate", "single stair", "single staircase", "two stairways", "building codes", "sprinklers", "multifamily", "apartments", "wildfire"],
+    "url": "https://www.pew.org/en/research-and-analysis/issue-briefs/2025/09/modern-multifamily-buildings-provide-the-most-fire-protection",
+    "added": "2026-08-15"
   }
 ];
