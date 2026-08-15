@@ -32,6 +32,10 @@ window.CATEGORIES = [
     "blurb": "How housing policy sorts people across places and hardens disadvantage."
   },
   {
+    "name": "Health and Wellbeing",
+    "blurb": "How housing and the rules that shape it turn up in people's health."
+  },
+  {
     "name": "Local Political Economy",
     "blurb": "Who holds power over land use decisions and what they do with it."
   },

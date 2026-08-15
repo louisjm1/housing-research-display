@@ -596,5 +596,34 @@ window.PAPERS = [
     "keywords": ["Zoning reform", "Land use regulation", "House prices", "Rental prices", "Synthetic control", "Minneapolis 2040", "single-family zoning", "upzoning"],
     "url": "https://ideas.repec.org/p/zbw/glodps/1629.html",
     "added": "2026-08-15"
+  },
+  {
+    "id": "strully-yang-fang-liu-2025-low-density-zoning-health-disparities",
+    "title": "Low-Density Zoning and Health Disparities in Metro Areas",
+    "authors": ["Kate W. Strully", "Tse-Chuan Yang", "Chunxu Fang", "Han Liu"],
+    "affiliations": [
+      "University at Albany, SUNY",
+      "University at Albany, SUNY",
+      "University at Albany, SUNY",
+      "University of Texas at San Antonio"
+    ],
+    "published": "2025-12",
+    "published_basis": "Published online",
+    "venue": "Journal of Health and Social Behavior, Volume 67, Issue 1 (2026), pages 2-25",
+    "kind": "Peer reviewed article",
+    "access": "Subscription",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Health and Wellbeing",
+      "Segregation and Neighborhood Inequality"
+    ],
+    "key_point": "Using data from the National Longitudinal Land Use Survey and Behavioral Risk Factor Surveillance Selected Metropolitan/Micropolitan Area Risk Trends data (N = 87,752), we find that metro areas with a higher proportion of jurisdictions with restrictive low-density zoning have wider race, ethnic, and income disparities in poor self-assessed health. However, we also find suggestive evidence that race disparities in obesity may be narrower in metro areas with more low-density zoning.",
+    "key_point_source": "Abstract",
+    "abstract": "This study examines associations between low-density zoning and individual health outcomes across 44 large U.S. metro areas. Zoning laws that restrict housing density to low levels can restrict affordable housing, contribute to urban sprawl, and increase segregation. Density zoning is one of the oldest and most common forms of residential zoning in the United States, and conceptual models posit that low-density zoning should be associated with wider health disparities. However, empirical associations between density zoning and health have been largely undocumented. Using data from the National Longitudinal Land Use Survey and Behavioral Risk Factor Surveillance Selected Metropolitan/Micropolitan Area Risk Trends data (N = 87,752), we find that metro areas with a higher proportion of jurisdictions with restrictive low-density zoning have wider race, ethnic, and income disparities in poor self-assessed health. However, we also find suggestive evidence that race disparities in obesity may be narrower in metro areas with more low-density zoning.",
+    "transcription_note": "The publisher's own page would not open, so the abstract, authors and affiliations were read from the record the publisher deposited with Crossref. The month shown is when the article went online, 11 December 2025. The March 2026 date is the print issue and sits in the publication line.",
+    "keywords": ["low-density zoning", "health disparities", "self-assessed health", "obesity", "National Longitudinal Land Use Survey", "BRFSS", "SMART", "metro areas", "sprawl"],
+    "doi": "10.1177/00221465251391834",
+    "url": "https://journals.sagepub.com/doi/abs/10.1177/00221465251391834",
+    "added": "2026-08-15"
   }
 ];
