@@ -449,5 +449,28 @@ window.PAPERS = [
     "keywords": ["rental registry", "rental housing registry", "Buffy Wicks", "Catherine Bracy", "TechEquity Collaborative", "California", "tenant protections", "landlord reporting"],
     "url": "https://www.lewis.ucla.edu/event/opportunities-and-obstacles-for-rental-housing-registries",
     "added": "2026-08-09"
+  },
+  {
+    "id": "kouchekinia-2026-inclusionary-zoning-and-housing-supply",
+    "title": "Inclusionary Zoning and Housing Supply: Evidence from California’s Palmer Fix",
+    "authors": ["Noah Kouchekinia"],
+    "affiliations": ["University of California, Irvine, Department of Economics"],
+    "published": "2026-06",
+    "published_basis": "Date on the paper",
+    "venue": "Working paper, University of California, Irvine",
+    "kind": "Working paper",
+    "access": "Free download",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Housing Supply and Production",
+      "Subsidized and Affordable Housing"
+    ],
+    "key_point": "I find the typical inclusionary zoning ordinance reduces annual new residential construction by nearly a third (31.8%). Additionally, I find the policies relocate multi-family developments within jurisdictions to lower rent areas, where the policy is effectively less severe. Accounting for the stringency of policies turns out to be critical, and heterogeneous effects by policy stringency may explain divergent results in the prior literature. I estimate the cost of generating an affordable unit with inclusionary zoning to be approximately $800,000 in “excess rents” paid by market rate renters as a result of the policy’s constraint on supply. This exceeds the cost of directly incentivizing the creation of low-income housing in California through existing programs like LIHTC.",
+    "key_point_source": "Abstract",
+    "abstract": "Inclusionary Zoning requires developers to set aside a share of new units at affordable rates to low/moderate income tenants. In California, more than a third of localities have adopted an ordinance. Mandatory inclusionary zoning acts as a tax on construction and, all else equal, reduces the overall supply of housing. This potentially reduces affordability in the aggregate. Quantifying this trade off has been difficult due to heterogeneous local policies, data quality issues, and the endogeneity of local inclusionary zoning adoption. I estimate the effect of inclusionary zoning using novel administrative data covering all cities and counties in California. I leverage a statewide change in preempting law for identification, performing a difference-in-difference around an exogenous reactivation of local inclusionary ordinances. I find the typical inclusionary zoning ordinance reduces annual new residential construction by nearly a third (31.8%). Additionally, I find the policies relocate multi-family developments within jurisdictions to lower rent areas, where the policy is effectively less severe. Accounting for the stringency of policies turns out to be critical, and heterogeneous effects by policy stringency may explain divergent results in the prior literature. I estimate the cost of generating an affordable unit with inclusionary zoning to be approximately $800,000 in “excess rents” paid by market rate renters as a result of the policy’s constraint on supply. This exceeds the cost of directly incentivizing the creation of low-income housing in California through existing programs like LIHTC.",
+    "transcription_note": "Read from the paper's own PDF. The title page sets the title on two lines with no punctuation between them, joined here with a colon. Four words the typesetting broke across lines have been closed up: ordinance, Quantifying, inclusionary, inclusionary. Nothing else was altered.",
+    "keywords": ["Inclusionary Zoning", "Affordable Housing", "Spatial Sorting", "Location Choice", "Palmer", "LIHTC", "California", "inclusionary ordinance"],
+    "url": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/b/5302/files/2026/06/IZ_Kouchekinia.pdf",
+    "added": "2026-08-15"
   }
 ];
