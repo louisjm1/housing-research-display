@@ -472,5 +472,77 @@ window.PAPERS = [
     "keywords": ["Inclusionary Zoning", "Affordable Housing", "Spatial Sorting", "Location Choice", "Palmer", "LIHTC", "California", "inclusionary ordinance"],
     "url": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/b/5302/files/2026/06/IZ_Kouchekinia.pdf",
     "added": "2026-08-15"
+  },
+  {
+    "id": "freeman-lei-maaoui-2026-before-the-ground-breaks",
+    "title": "Before the ground breaks: Is inclusionary zoning a shield or a signal of gentrification?",
+    "authors": ["Lance Freeman", "Yining Lei", "Magda Maaoui"],
+    "affiliations": [],
+    "published": "2026-03",
+    "published_basis": "Published online",
+    "venue": "Land Use Policy, Volume 167 (2026), article 108033",
+    "kind": "Peer reviewed article",
+    "access": "Subscription",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Subsidized and Affordable Housing",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "Based on a comparison of MIH zones to surrounding \"control\" areas, we find evidence of MIH increased both home sales prices and rents, but the most consistent and statistically significant growth occurred in areas immediately surrounding MIH zones. We find little evidence of price escalation in MIH zones. Our findings suggest that for IZs that are geographically limited like MIH, the costs to residents such as gentrification and increased housing prices may be externalized onto nearby neighborhoods. This points to a policy need for more spatially integrated planning approaches to affordable housing, where affordability protections extend beyond narrowly drawn IZ boundaries.",
+    "key_point_source": "Abstract",
+    "abstract": "Inclusionary Zoning (IZ) is a tool in land use planning for leveraging new market-rate housing to produce affordable housing, typically in exchange for increased density. While growing in popularity, IZ receives criticisms for the possibility that its market-rate housing component would lead to gentrification by altering local housing markets. Using New York City's Mandatory Inclusionary Housing (MIH) program, a relatively ambitious IZ effort, we test if IZ increases home sales prices and rents in areas that are designated as MIH zones. Based on a comparison of MIH zones to surrounding \"control\" areas, we find evidence of MIH increased both home sales prices and rents, but the most consistent and statistically significant growth occurred in areas immediately surrounding MIH zones. We find little evidence of price escalation in MIH zones. Our findings suggest that for IZs that are geographically limited like MIH, the costs to residents such as gentrification and increased housing prices may be externalized onto nearby neighborhoods. This points to a policy need for more spatially integrated planning approaches to affordable housing, where affordability protections extend beyond narrowly drawn IZ boundaries.",
+    "transcription_note": "The publisher's own page would not open, so the abstract was read from the RePEc mirror of the publisher record rather than from the article page. The month shown is when the article went online, which Crossref records as 23 March 2026 and which matches a March license start date. The August 2026 date on the volume is the print issue and sits in the publication line. Author affiliations were left blank rather than guessed, because the only machine-readable source for them looked wrong.",
+    "keywords": ["Inclusionary zoning", "Housing production", "Gentrification", "New York City", "Mandatory Inclusionary Housing", "MIH"],
+    "doi": "10.1016/j.landusepol.2026.108033",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0264837726001171",
+    "added": "2026-08-15"
+  },
+  {
+    "id": "lee-mordechay-2025-metropolitan-zoning-asymmetries",
+    "title": "Do Metropolitan Zoning Asymmetries Influence the Geography of Suburban Growth and Gentrification?",
+    "authors": ["Hyojung Lee", "Kfir Mordechay"],
+    "affiliations": [
+      "Graduate School of Environmental Studies, Seoul National University",
+      "Graduate School of Education and Psychology, Pepperdine University"
+    ],
+    "published": "2025-07",
+    "published_basis": "Published online",
+    "venue": "Land, Volume 14, Issue 8 (2025), article 1555",
+    "kind": "Peer reviewed article",
+    "access": "Open access",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Segregation and Neighborhood Inequality"
+    ],
+    "key_point": "Our findings show that suburban areas have outpaced urban cores in population growth across all zoning configurations, with the most pronounced growth occurring in metros where restrictive urban zoning coexists with permissive suburban regulation. This growth is disproportionately concentrated in affluent suburban neighborhoods, suggesting a spatial sorting of access to resources and amenities. We also find that urban–suburban gentrification gaps are the smallest in these asymmetrical zoning regimes, suggesting that permissive suburban land use may facilitate spillover effects from constrained cores. These findings suggest that zoning asymmetries shape not only the geography of growth but also the spatial dynamics of gentrification.",
+    "key_point_source": "Abstract",
+    "abstract": "Zoning policies play a critical role in shaping the geography of urban and suburban development in the United States. Using data from the National Zoning and Land-Use Database and tract-level census data from 42 Metropolitan Statistical Areas, we classify metros into four zoning regime types based on the relative restrictiveness of urban and suburban land-use policies and compare trends in population growth and neighborhood change across these regimes. Our findings show that suburban areas have outpaced urban cores in population growth across all zoning configurations, with the most pronounced growth occurring in metros where restrictive urban zoning coexists with permissive suburban regulation. This growth is disproportionately concentrated in affluent suburban neighborhoods, suggesting a spatial sorting of access to resources and amenities. We also find that urban–suburban gentrification gaps are the smallest in these asymmetrical zoning regimes, suggesting that permissive suburban land use may facilitate spillover effects from constrained cores. These findings suggest that zoning asymmetries shape not only the geography of growth but also the spatial dynamics of gentrification. We argue for a metropolitan perspective on land-use governance to better understand the interconnected nature of suburbanization and the spatial expansion of gentrification.",
+    "keywords": ["land-use regulation", "zoning asymmetries", "suburban area", "gentrification", "population change", "National Zoning and Land-Use Database"],
+    "doi": "10.3390/land14081555",
+    "url": "https://www.mdpi.com/2073-445X/14/8/1555",
+    "added": "2026-08-15"
+  },
+  {
+    "id": "pew-2025-new-housing-slows-rent-growth-older-units",
+    "title": "New Housing Slows Rent Growth Most for Older, More Affordable Units",
+    "authors": ["Seva Rodnyansky", "Dennis Su", "Alex Horowitz"],
+    "affiliations": ["The Pew Charitable Trusts"],
+    "published": "2025-07",
+    "published_basis": "Publication date",
+    "venue": "The Pew Charitable Trusts, Housing Policy",
+    "kind": "Article",
+    "access": "Free",
+    "categories": [
+      "Filtering and Moving Chains",
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "The nationwide housing shortage has driven rents up more in low-income neighborhoods than in the U.S. overall, but in areas that have recently added large amounts of housing, rents have fallen the most in lower-income neighborhoods with older buildings, according to an analysis of publicly available housing data. [...] Building more housing—both throughout a metropolitan area and in a particular neighborhood—keeps rent growth lower overall, but it takes the most pressure off of older, less-expensive housing, essentially mitigating the competitive process just described. Pew’s analysis of the 1,654 ZIP codes tracked by Zillow throughout U.S. metropolitan areas suggests that every 10% increase in a market’s housing supply (using American Community Survey data) from 2017 to 2023 correlated with rents growing 5% less from 2017 to 2024, controlling for a variety of factors.",
+    "key_point_source": "Article",
+    "source_text": "Data shows that limited supply is associated with greatest rent increases in low-income neighborhoods [...] The nationwide housing shortage has driven rents up more in low-income neighborhoods than in the U.S. overall, but in areas that have recently added large amounts of housing, rents have fallen the most in lower-income neighborhoods with older buildings, according to an analysis of publicly available housing data. [...] The findings suggest that not allowing more homes to be built—even for high-income residents—pushes up all rents, making it harder for low-income tenants to remain in their neighborhoods. [...] Building more housing—both throughout a metropolitan area and in a particular neighborhood—keeps rent growth lower overall, but it takes the most pressure off of older, less-expensive housing, essentially mitigating the competitive process just described. Pew’s analysis of the 1,654 ZIP codes tracked by Zillow throughout U.S. metropolitan areas suggests that every 10% increase in a market’s housing supply (using American Community Survey data) from 2017 to 2023 correlated with rents growing 5% less from 2017 to 2024, controlling for a variety of factors. New supply at the neighborhood-level matters, too. A 10% increase in a ZIP code’s housing supply means average rents grew by 1.4% less than they did in a ZIP code with no supply growth.",
+    "transcription_note": "The article has no abstract, so source_text holds the passages that were read on the page rather than one continuous run. Passages that sit apart are separated with the same [...] mark used in the quotations.",
+    "keywords": ["Zillow Observed Rent Index", "American Community Survey", "ZIP code", "rent growth", "housing shortage", "older housing", "low-income neighborhoods"],
+    "url": "https://www.pew.org/en/research-and-analysis/articles/2025/07/31/new-housing-slows-rent-growth-most-for-older-more-affordable-units",
+    "added": "2026-08-15"
   }
 ];
