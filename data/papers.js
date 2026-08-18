@@ -719,5 +719,42 @@ window.PAPERS = [
     "doi": "10.1016/j.econmod.2026.107592",
     "url": "https://www.sciencedirect.com/science/article/pii/S0264999326001215",
     "added": "2026-08-15"
+  },
+  {
+    "id": "buchler-lutz-2024-relaxing-land-use-regulation",
+    "title": "Making housing affordable? The local effects of relaxing land-use regulation",
+    "authors": [
+      "Simon Büchler",
+      "Elena Lutz"
+    ],
+    "affiliations": [],
+    "published": "2024-08",
+    "published_basis": "Published online",
+    "venue": "Journal of Urban Economics, Volume 143 (2024), article 103689",
+    "kind": "Peer reviewed article",
+    "access": "Open access",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Housing Supply and Production",
+      "Rents, Prices, and Affordability"
+    ],
+    "key_point": "Increasing the allowable floor-to-area ratio (FAR), i.e., upzoning, significantly increases the living space and housing units by approximately 9% in the subsequent five to ten years. This effect is stronger for larger upzonings, for rasters where zoning is binding, and where rents are high. Furthermore, upzoning leads to no difference in hedonic rents between upzoned and later-upzoned rasters. These results show that upzoning is a viable policy for increasing housing affordability. However, the effects depend on the upzoning policy design and take several years to materialize.",
+    "key_point_source": "Abstract",
+    "abstract": "This paper examines the effects of relaxing land-use regulations on housing supply and rents at the local intra-city level. We apply a staggered difference-in-difference model, exploiting exogenous differences in the treatment timing of zoning plan reforms as identifying variation. Increasing the allowable floor-to-area ratio (FAR), i.e., upzoning, significantly increases the living space and housing units by approximately 9% in the subsequent five to ten years. This effect is stronger for larger upzonings, for rasters where zoning is binding, and where rents are high. Furthermore, upzoning leads to no difference in hedonic rents between upzoned and later-upzoned rasters. These results show that upzoning is a viable policy for increasing housing affordability. However, the effects depend on the upzoning policy design and take several years to materialize.",
+    "transcription_note": "The publisher's own page would not open, so the abstract and keywords were read from the RePEc mirror of the publisher record, taken straight from the page. The month shown is when the article went online, 23 August 2024. The September 2024 date is the print issue and sits in the publication line. OpenAlex records the article as free to read under a CC BY licence. Affiliations were left blank rather than guessed, because the machine-readable source lists four institutions across two authors without saying which belongs to whom.",
+    "keywords": [
+      "Affordability",
+      "Zoning",
+      "Densification",
+      "Housing supply",
+      "Rents",
+      "upzoning",
+      "floor-to-area ratio",
+      "FAR",
+      "hedonic rents"
+    ],
+    "doi": "10.1016/j.jue.2024.103689",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0094119024000597",
+    "added": "2026-08-15"
   }
 ];
