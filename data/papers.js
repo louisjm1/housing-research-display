@@ -648,5 +648,76 @@ window.PAPERS = [
     "keywords": ["fire safety", "fire death rate", "single stair", "single staircase", "two stairways", "building codes", "sprinklers", "multifamily", "apartments", "wildfire"],
     "url": "https://www.pew.org/en/research-and-analysis/issue-briefs/2025/09/modern-multifamily-buildings-provide-the-most-fire-protection",
     "added": "2026-08-15"
+  },
+  {
+    "id": "song-2025-effects-of-residential-zoning",
+    "title": "The effects of residential zoning in U.S. housing markets",
+    "authors": [
+      "Jaehee Song"
+    ],
+    "affiliations": [],
+    "published": "2025-08",
+    "published_basis": "Published online",
+    "venue": "Journal of Urban Economics, Volume 149 (2025), article 103784",
+    "kind": "Peer reviewed article",
+    "access": "Subscription",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Rents, Prices, and Affordability",
+      "Segregation and Neighborhood Inequality"
+    ],
+    "key_point": "I find that 18.5 percent of single-family home constructions bunch at the minimum lot size threshold, suggesting that these zoning requirements are binding for a substantial share of single-family development. Second, I estimate the effects of these regulations on housing market outcomes, exploiting variation across nearby zoning districts within municipal border regions. The results show that minimum lot size regulations increase home sizes, sales prices, and rents. Moreover, restrictive zoning disproportionately attracts high-income white homeowners, reinforcing patterns of residential segregation.",
+    "key_point_source": "Abstract",
+    "abstract": "I construct a new nationwide dataset to measure the stringency of residential zoning in the United States and examine its effects on housing production, prices, and demographic sorting. First, I develop and implement a structural break detection algorithm to infer minimum lot size regulations. The dataset spans over 16,000 local jurisdictions within Core-Based Statistical Areas, capturing both cross-jurisdictional and within-jurisdictional variation in zoning stringency. I find that 18.5 percent of single-family home constructions bunch at the minimum lot size threshold, suggesting that these zoning requirements are binding for a substantial share of single-family development. Second, I estimate the effects of these regulations on housing market outcomes, exploiting variation across nearby zoning districts within municipal border regions. The results show that minimum lot size regulations increase home sizes, sales prices, and rents. Moreover, restrictive zoning disproportionately attracts high-income white homeowners, reinforcing patterns of residential segregation.",
+    "transcription_note": "The publisher's own page would not open, so the abstract and keywords were read from the RePEc mirror of the publisher record, taken straight from the page rather than through a summary. The month shown is when the article went online, which Crossref records as 6 August 2025. The September 2025 date is the print issue and sits in the publication line.",
+    "keywords": [
+      "Zoning laws",
+      "Minimum lot size",
+      "Housing affordability",
+      "Segregation",
+      "bunching",
+      "Core-Based Statistical Areas",
+      "border discontinuity"
+    ],
+    "doi": "10.1016/j.jue.2025.103784",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S009411902500049X",
+    "added": "2026-08-15"
+  },
+  {
+    "id": "greenaway-mcgrevy-2026-auckland-zoning-reform",
+    "title": "Can zoning reform increase housing construction? Evidence from Auckland",
+    "authors": [
+      "Ryan Greenaway-McGrevy"
+    ],
+    "affiliations": [
+      "University of Auckland"
+    ],
+    "published": "2026-04",
+    "published_basis": "Published online",
+    "venue": "Economic Modelling, Volume 160 (2026), article 107592",
+    "kind": "Peer reviewed article",
+    "access": "Open access",
+    "categories": [
+      "Zoning and Land Use Regulation",
+      "Housing Supply and Production",
+      "Reform and Policy Evaluation"
+    ],
+    "key_point": "The synthetic control provides an estimate of outcomes under the counterfactual of no zoning reform and implies that the upzoning approximately doubled new dwelling permits per capita within five years of the reform becoming operational. Seven years on from the reform, cumulative permits issued exceed those of the synthetic control by approximately 52,200, forty-six percent of the 112,300 permits issued over this period. Our findings suggest that zoning reform can expand housing supply in other jurisdictions where regulatory constraints on land use have prevented dwelling construction from keeping pace with demand-side pressures such as population growth.",
+    "key_point_source": "Abstract",
+    "abstract": "In 2016, Auckland, New Zealand upzoned approximately three-quarters of its residential land, allowing medium- and high-density housing to be built in areas previously zoned for low density. Permits for the construction of new dwellings subsequently reached record highs. We use a synthetic control method to evaluate the impact of this widespread zoning reform on housing starts. The synthetic control provides an estimate of outcomes under the counterfactual of no zoning reform and implies that the upzoning approximately doubled new dwelling permits per capita within five years of the reform becoming operational. Seven years on from the reform, cumulative permits issued exceed those of the synthetic control by approximately 52,200, forty-six percent of the 112,300 permits issued over this period. Our findings suggest that zoning reform can expand housing supply in other jurisdictions where regulatory constraints on land use have prevented dwelling construction from keeping pace with demand-side pressures such as population growth.",
+    "transcription_note": "The publisher's own page would not open, so the abstract and keywords were read from the RePEc mirror of the publisher record, taken straight from the page rather than through a summary. The month shown is when the article went online, 5 April 2026. The July 2026 date is the print issue and sits in the publication line. Open access status and the author's institution were confirmed against OpenAlex, which records the article as free to read under a CC BY licence.",
+    "keywords": [
+      "Upzoning",
+      "Land use regulations",
+      "Redevelopment",
+      "Housing starts",
+      "Synthetic controls",
+      "Auckland",
+      "New Zealand",
+      "Auckland Unitary Plan"
+    ],
+    "doi": "10.1016/j.econmod.2026.107592",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0264999326001215",
+    "added": "2026-08-15"
   }
 ];
